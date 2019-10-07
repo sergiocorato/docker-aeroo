@@ -1,6 +1,4 @@
 FROM debian:jessie
-MAINTAINER Sergio Corato <sergiocorato@gmail.com>
-
 ENV DEBIAN_FRONTEND noninteractive
 ENV PYTHONIOENCODING utf-8
 RUN apt-get update -y
