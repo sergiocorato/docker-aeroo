@@ -6,7 +6,7 @@ ENV PYTHONIOENCODING utf-8
 RUN echo "deb http://http.debian.net/debian stretch-backports main" >> \
     /etc/apt/sources.list
 RUN apt-get update -y
-RUN apt-get -y install libreoffice
+RUN apt-get -y install -t stretch-backports libreoffice
 RUN apt-get install -y git python3-uno python3-pip supervisor \
     openjdk-8-jre openjdk-8-jre-headless tcpd uno-libs3 ure python-pip
 # ? xvfb
